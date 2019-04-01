@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Гостиницы</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="menu-navigation">
+            <a class="logo"><img src="img/logo.svg" alt="Город «Седона»"></a>
+            <ul class="menu-list">
+                <li><a href="#">информация</a></li>
+                <li><a href="#">фото и видео</a></li>
+                <li><a href="#">карта штата</a></li>
+                <li><a href="#">гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Выбор жилья</h1>
+        <section class="filter">
+            <form action="">
+                <p>
+                    <h2>ИНФРАСТРУКТОРА:</h2> <br>
+                    <input type="checkbox" name="filter-pool" id="filter-pool" checked>
+                    <label for="filter-pool">БАССЕЙН</label> <br>
+                    <input type="checkbox" name="filter-parking" id="filter-parking">
+                    <label for="filter-parking">ПАРКОВКА</label> <br>
+                    <input type="checkbox" name="filter-wifi" id="filter-wifi">
+                    <label for="filter-wifi">WI-FI</label> 
+                </p> 
+                <p>ТИП ЖИЛЬЯ: <br>
+                    <input type="checkbox" name="filter-hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">ГОСТИНИЦА</label> <br>
+                    <input type="checkbox" name="filter-motel" id="filter-motel">
+                    <label for="filter-motel">ПАРКОВКА</label> <br>
+                    <input type="checkbox" name="filter-appartament" id="filter-appartament">
+                    <label for="filter-appartament">WI-FI</label> 
+                </p>
+                <div>
+                    <p>Стоимость в сутки (Р):</p> <br> 
+                    <p>
+                        ОТ<output>0</output> 
+                        ДО<output>3000</output>   
+                    </p>
+                    <input type="range" min="0" max="5000" value="0"> <br>    
+                    <button>ПОКАЗАТЬ</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
