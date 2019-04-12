@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Туристический город «Sedona»</title>
 </head>
 <body>
+    <header class="header">
+        <nav class="navigation">
+            <a href="/" class="logo"><img src="img/logo.svg" alt="Город «Седона»"></a>
+            <ul class="menu-list">
+                <li><a href="#">информация</a></li>
+                <li><a href="#">фото и видео</a></li>
+                <li><a href="#">карта штата</a></li>
+                <li><a href="#">гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Добро пожаловать в город «Седона»</h1>
+      
+      <section class="greeting">
+          <p class="greeting-welcome">
+              <b>welcome</b> <br>
+              to the gorgeous
+          </p>
+          <p class="greeting-city">sedona</p>
+          <p class="greeting-text">
+                &ldquo;  Because the Grand <br>
+                Canyon sucks! &bdquo;
+          </p>
+          <img src="img/mask.svg" alt="">
+      </section>
+
+      <section class="features">
+          <h2>седона — небольшой городок в аризоне,  заслуживающий большего! </h2>
+          <p class="features-reason">рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <div class="wrap">
+                <ul class="features-list">
+                    <li class="features-item">
+                        <h3>настоящий городок</h3>
+                        <p class="features-item-number">— №1 —</p> <br>
+                        седона — не аттракцион для туристов, там течет своя жизнь
+                    </li>
+                    <li class="features-item">
+                        <img src="img/livesedona.jpg" alt="Жизнь в Седоне">   
+                    </li>
+                    <li class="features-item">
+                        <img src="img/icon-1">
+                        <b>жилье</b> <br>
+                        Рекомендуем пожить в настоящем мотеле, все как в кино!
+                    </li>
+                    <li class="features-item">
+                        <img src="img/icon-2">
+                        <b>еда</b> <br>
+                        Всегда заказывайте фирменный бургер, Вы не разочаруетесь!     
+                    </li>
+                    <li class="features-item">
+                        <img src="img/icon-3">   
+                        <b>сувениры</b> <br>
+                        Не только китайского, но и местного производства!
+                    </li>
+                    <li class="features-item">
+                        <img src="img/bridge.jpg" alt="Мост над каньоном">   
+                    </li>
+                    <li class="features-item">
+                        <h3>там есть мост дьявола</h3>
+                        <p class="features-item-number">— №2 —</p> <br>
+                        да, по нему можно пройти! Если конечно вы осмелитесь
+                    </li>
+                    <li class="features-item">
+                        <h3>небольшая площадь</h3>
+                        <p class="features-item-number">— №3 —</p>
+                        все достопримечательности находятся очень близко
+                    </li>
+                    <li class="features-item">
+                        <h3>красивая дорога</h3>
+                        <p class="features-item-number">— №4 —</p>
+                        ехать в седону из лас-вегаса совсем не скучно!
+                    </li>
+                    <li class="features-item">
+                        <h3>МАЛО ТУРИСТОВ</h3>
+                        <p class="features-item-number">— №5 —</p>
+                        Большинство едет в гранд каньон и толпится там
+                    </li>
+                </ul>
+          </div>
+      </section>
+
+      <section class="booking">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки,</p>
+            <p> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button type="button">поиск гостиницы в седоне</button> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702967.232277507!2d-111.77740325760263!3d35.06872824830966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1554046622594!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <p><b>#visitSEDONA</b></p>
+        <ul class="social-list">
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">youtube</a></li>
+        </ul>
+        <p>
+            WEBSITE BY  <br>
+            <img src="img/footer-logo.svg" alt="html academy">
+        </p>
+    </footer>
+
+    <section class="modal-booking">
+        <h2>поиск гостиницы в седоне</h2>
+        <form action="">
+            <label for="arrival">дата заезда:</label>
+            <input type="date" name="arrival" id="arrival" placeholder="Выберете дату..."><br>
+           <!--<img src="img/calendar.svg" alt=""> --> 
+            <label for="departure">дата выезда:</label>
+            <input type="date" name="departure" id="departure" placeholder="Выберете дату...">
+            <!--<img src="img/calendar.svg" alt=""> -->  <br>
+            <label for="adults">взрослые:</label>
+            <button type="button">-</button>
+            <input type="text" placeholder="0" name="adults" id="adults">
+            <button type="button">+</button>
+            <label for="kids">дети:</label>
+            <button type="button">-</button>
+            <input type="text" placeholder="0" name="kids" id="kids">
+            <button type="button">+</button> <br>
+            <button type="submit">найти</button>
+
+        </form>
+    </section>
+
+
     
 </body>
 </html>

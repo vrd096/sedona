@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Гостиницы</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="menu-navigation">
+            <a class="logo"><img src="img/logo.svg" alt="Город «Седона»"></a>
+            <ul class="menu-list">
+                <li><a href="#">информация</a></li>
+                <li><a href="#">фото и видео</a></li>
+                <li><a href="#">карта штата</a></li>
+                <li><a href="#">гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="visually-hidden">выбор жилья</h1>
+        <section class="filter">
+            <form action="">
+                <p>
+                    <h2>инфраструктура:</h2> <br>
+                    <input type="checkbox" name="filter-pool" id="filter-pool" checked>
+                    <label for="filter-pool">бассейн</label> <br>
+                    <input type="checkbox" name="filter-parking" id="filter-parking">
+                    <label for="filter-parking">парковка</label> <br>
+                    <input type="checkbox" name="filter-wifi" id="filter-wifi">
+                    <label for="filter-wifi">WI-FI</label> 
+                </p> 
+                    <h2>тип жилья:</h2> <br>
+                    <input type="checkbox" name="filter-hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">гостиница</label> <br>
+                    <input type="checkbox" name="filter-motel" id="filter-motel">
+                    <label for="filter-motel">парковка</label> <br>
+                    <input type="checkbox" name="filter-appartament" id="filter-appartament">
+                    <label for="filter-appartament">WI-FI</label> 
+                </p>
+                <div>
+                    <h2>Стоимость в сутки (Р):</h2> <br> 
+                    <p>
+                        ОТ<output>0</output> 
+                        ДО<output>3000</output>   
+                    </p>
+                    <input type="range" min="0" max="5000" value="0"> <br>    
+                    <button>показать</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="sorting-hotels">
+            <p>
+                <b>найдено:</b>
+                <b>3</b>
+                сортировка:
+                <ul class="sorting-list">
+                    <li class="sorting-item"><a href="#">по цене</a></li>
+                    <li class="sorting-item"><a href="#">по типу</a></li>
+                    <li class="sorting-item"><a href="#">по рейтингу</a></li>
+                </ul>
+                <p class="sorting-arrows">
+                    <img src="img/arrowdown.svg" alt="стрелочка вниз">
+                    <img src="img/arrowup.svg" alt="стрелочка вверх">
+                </p>
+            </p>
+        </section>
+
+        <article class="search-hotels">
+            <ul class="search-list">
+                <li class="search-item">
+                    <p class="search-item-photo">
+                        <img src="img/amara-resort.jpg" alt="Amara Resort & Spa">
+                    </p>
+                    <p class="search-item-info">
+                        <h3>Amara Resort & Spa</h3>
+                        гостиница <span>от 4000 Р.</span> <br>
+                        <button class="search-item-detail">подробнее</button>
+                        <button class="search-item-booking">забронировать</button>
+                    </p>
+                    <p class="search-item-rating">
+                        &#9733;&#9733;&#9733;&#9733; <br>
+                        <span class="search-item-rating-points">рейтинг: 8,5</span>
+                    </p>
+                </li>
+                <li class="search-item">
+                    <p class="search-item-photo">
+                        <img src="img/desert-quail.jpg" alt="Amara Resort & Spa">
+                        </p>
+                        <p class="search-item-info">
+                            <h3>Desert Quail Inn</h3>
+                            мотель <span>от 3000 Р.</span> <br>
+                            <button class="search-item-detail">подробнее</button>
+                            <button class="search-item-booking">забронировать</button>
+                        </p>
+                        <p class="search-item-rating">
+                            &#9733;&#9733;&#9733;&#9733; <br>
+                            <span class="search-item-rating-points">рейтинг: 8,5</span>
+                    </p>
+                </li>
+                <li class="search-item">
+                    <p class="search-item-photo">
+                        <img src="img/villas-at-poco-diablo.jpg" alt="Amara Resort & Spa">
+                        </p>
+                        <p class="search-item-info">
+                            <h3>Villas at Poco Diablo</h3>
+                            апартаменты <span>от 2000 Р.</span> <br>
+                            <button class="search-item-detail">подробнее</button>
+                            <button class="search-item-booking">забронировать</button>
+                        </p>
+                        <p class="search-item-rating">
+                            &#9733;&#9733;&#9733;&#9733; <br>
+                            <span class="search-item-rating-points">рейтинг: 8,5</span>
+                    </p>
+                </li>
+            </ul>
+        </article>
+    </main>
+
+    <footer class="main-footer">
+            <p><b>#visitSEDONA</b></p>
+            <ul class="social-list">
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">youtube</a></li>
+            </ul>
+            <p>
+                WEBSITE BY  <br>
+                <img src="img/footer-logo.svg" alt="html academy">
+            </p>
+        </footer>
+
+</body>
+</html>
